@@ -19,7 +19,6 @@ export const useUiStore = defineStore('ui', {
     }),
     actions: {
         showNotice() {
-            this.changeNotice ++
         },
         previewNotice(data) {
             this.previewData = data
