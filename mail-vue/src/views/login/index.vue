@@ -594,7 +594,7 @@ function submitRegister() {
 
 .form-wrapper {
   position: fixed;
-  right: 0;
+  width: 100%;
   height: 100%;
   z-index: 10;
   display: flex;
@@ -609,17 +609,20 @@ function submitRegister() {
   background: v-bind(loginOpacity);
   padding-left: 40px;
   padding-right: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 450px;
-  height: 100%;
-  border-left: 1px solid var(--login-border);
+  height: auto;
+  border: 1px solid var(--login-border);
+  border-radius: 12px;
   box-shadow: var(--el-box-shadow-light);
   @media (max-width: 1024px) {
     padding: 20px 18px;
     width: 384px;
-    margin-left: 18px;
+    margin-left: 0;
   }
   @media (max-width: 767px) {
     border: 1px solid var(--login-border);
